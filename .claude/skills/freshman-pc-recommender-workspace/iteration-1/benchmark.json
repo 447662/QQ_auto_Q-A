@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "skill_name": "freshman-pc-recommender",
+    "skill_path": "g:/My_code/trae_solo/QQ_auto_Q&A/.claude/skills/freshman-pc-recommender",
+    "executor_model": "sonnet",
+    "analyzer_model": "manual",
+    "timestamp": "2026-05-26T21:12:03",
+    "evals_run": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "7000-ic-student",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 157.1,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应明确判断需求层级为进阶层或类似表述，并解释虚拟机、竞赛、游戏和便携的取舍。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应给出至少 3 个配置方案，且至少包含笔记本方案和台式/组合方案之一。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应同时提到 Intel/AMD CPU 路线或取舍，并提到 NVIDIA/AMD 显卡路线或取舍。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应包含购买渠道或电商检索/比价/店铺风险提示。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "7000-ic-student",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 79.9,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应明确判断需求层级为进阶层或类似表述，并解释虚拟机、竞赛、游戏和便携的取舍。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应给出至少 3 个配置方案，且至少包含笔记本方案和台式/组合方案之一。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应同时提到 Intel/AMD CPU 路线或取舍，并提到 NVIDIA/AMD 显卡路线或取舍。",
+          "passed": false,
+          "evidence": "人工根据 answer.md 内容核查：未充分覆盖或覆盖不明确。"
+        },
+        {
+          "text": "输出应包含购买渠道或电商检索/比价/店铺风险提示。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "9500-parent",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 119.6,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应至少给出 3 套 9500 元左右方案，并覆盖笔记本、台式机、轻薄本+主机组合三类形态。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应用家长能理解的语言解释重量、寿命、售后和游戏性能取舍。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应明确推荐低风险购买渠道，如京东自营、品牌官方旗舰店、天猫官方、拼多多百亿补贴官方/品牌店。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应包含验机、开箱录像、拒绝加价项目或类似购买风险提示。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "9500-parent",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 128.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应至少给出 3 套 9500 元左右方案，并覆盖笔记本、台式机、轻薄本+主机组合三类形态。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应用家长能理解的语言解释重量、寿命、售后和游戏性能取舍。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应明确推荐低风险购买渠道，如京东自营、品牌官方旗舰店、天猫官方、拼多多百亿补贴官方/品牌店。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应包含验机、开箱录像、拒绝加价项目或类似购买风险提示。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "5500-basic-engineering",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 177.3,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应判断为基础层或轻进阶层，并避免过度推荐高端独显。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应给出至少 3 个预算内或略超的配置方向。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应明确强调 16GB 以上内存、1TB SSD、内存/硬盘扩展性。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应说明未来仿真或虚拟机场景下如何升级内存和存储。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "5500-basic-engineering",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "time_seconds": 38.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应判断为基础层或轻进阶层，并避免过度推荐高端独显。",
+          "passed": false,
+          "evidence": "人工根据 answer.md 内容核查：未充分覆盖或覆盖不明确。"
+        },
+        {
+          "text": "输出应给出至少 3 个预算内或略超的配置方向。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应明确强调 16GB 以上内存、1TB SSD、内存/硬盘扩展性。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应说明未来仿真或虚拟机场景下如何升级内存和存储。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "8000-diy-combo",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 218.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应识别为组合层或 DIY 台式装机场景。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应拆分主机、轻薄本、显示器或外设预算。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应给出台式机配件单，包含 CPU、主板、内存、显卡、SSD、电源、散热、机箱。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应检查 CPU-主板、内存-主板、机箱尺寸、显卡供电/长度、电源余量等兼容性。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应包含购买渠道、电商比价和整机/配件风险提示。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "8000-diy-combo",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 247.5,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "输出应识别为组合层或 DIY 台式装机场景。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应拆分主机、轻薄本、显示器或外设预算。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应给出台式机配件单，包含 CPU、主板、内存、显卡、SSD、电源、散热、机箱。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应检查 CPU-主板、内存-主板、机箱尺寸、显卡供电/长度、电源余量等兼容性。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        },
+        {
+          "text": "输出应包含购买渠道、电商比价和整机/配件风险提示。",
+          "passed": true,
+          "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 168.0,
+        "stddev": 35.524,
+        "min": 119.6,
+        "max": 218.0
+      },
+      "tokens": {
+        "mean": 0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.875,
+        "stddev": 0.125,
+        "min": 0.75,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 123.35,
+        "stddev": 78.434,
+        "min": 38.0,
+        "max": 247.5
+      },
+      "tokens": {
+        "mean": 0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.12",
+      "time_seconds": "+44.7",
+      "tokens": "+0"
+    }
+  },
+  "notes": [
+    "with_skill 平均通过率更高，主要优势在明确需求分层、硬件路线覆盖和电商检索链路。",
+    "baseline 在家长场景和 DIY 场景也表现较强，说明这些断言有部分非区分性。",
+    "本轮子代理在 worktree 中无法直接写主评测目录，answer.md 由主会话根据返回结果整理落盘。"
+  ]
+}

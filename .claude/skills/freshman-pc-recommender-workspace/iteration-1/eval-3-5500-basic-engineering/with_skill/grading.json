@@ -1,0 +1,43 @@
+{
+  "expectations": [
+    {
+      "text": "输出应判断为基础层或轻进阶层，并避免过度推荐高端独显。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应给出至少 3 个预算内或略超的配置方向。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应明确强调 16GB 以上内存、1TB SSD、内存/硬盘扩展性。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应说明未来仿真或虚拟机场景下如何升级内存和存储。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 560,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 177.3,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 177.3
+  }
+}

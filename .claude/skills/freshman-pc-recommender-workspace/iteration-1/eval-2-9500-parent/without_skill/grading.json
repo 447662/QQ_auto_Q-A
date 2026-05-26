@@ -1,0 +1,43 @@
+{
+  "expectations": [
+    {
+      "text": "输出应至少给出 3 套 9500 元左右方案，并覆盖笔记本、台式机、轻薄本+主机组合三类形态。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应用家长能理解的语言解释重量、寿命、售后和游戏性能取舍。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应明确推荐低风险购买渠道，如京东自营、品牌官方旗舰店、天猫官方、拼多多百亿补贴官方/品牌店。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应包含验机、开箱录像、拒绝加价项目或类似购买风险提示。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 168,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 128.0,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 128.0
+  }
+}

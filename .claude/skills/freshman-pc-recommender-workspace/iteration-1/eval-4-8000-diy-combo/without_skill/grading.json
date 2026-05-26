@@ -1,0 +1,48 @@
+{
+  "expectations": [
+    {
+      "text": "输出应识别为组合层或 DIY 台式装机场景。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应拆分主机、轻薄本、显示器或外设预算。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应给出台式机配件单，包含 CPU、主板、内存、显卡、SSD、电源、散热、机箱。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应检查 CPU-主板、内存-主板、机箱尺寸、显卡供电/长度、电源余量等兼容性。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应包含购买渠道、电商比价和整机/配件风险提示。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 308,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 247.5,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 247.5
+  }
+}

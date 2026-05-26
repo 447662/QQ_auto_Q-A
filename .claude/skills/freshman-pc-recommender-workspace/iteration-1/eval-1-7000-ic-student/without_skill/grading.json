@@ -1,0 +1,43 @@
+{
+  "expectations": [
+    {
+      "text": "输出应明确判断需求层级为进阶层或类似表述，并解释虚拟机、竞赛、游戏和便携的取舍。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应给出至少 3 个配置方案，且至少包含笔记本方案和台式/组合方案之一。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    },
+    {
+      "text": "输出应同时提到 Intel/AMD CPU 路线或取舍，并提到 NVIDIA/AMD 显卡路线或取舍。",
+      "passed": false,
+      "evidence": "人工根据 answer.md 内容核查：未充分覆盖或覆盖不明确。"
+    },
+    {
+      "text": "输出应包含购买渠道或电商检索/比价/店铺风险提示。",
+      "passed": true,
+      "evidence": "人工根据 answer.md 内容核查：已覆盖。"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  },
+  "execution_metrics": {
+    "tool_calls": {},
+    "total_tool_calls": 0,
+    "total_steps": 1,
+    "errors_encountered": 0,
+    "output_chars": 268,
+    "transcript_chars": 0
+  },
+  "timing": {
+    "executor_duration_seconds": 79.9,
+    "grader_duration_seconds": 0,
+    "total_duration_seconds": 79.9
+  }
+}
