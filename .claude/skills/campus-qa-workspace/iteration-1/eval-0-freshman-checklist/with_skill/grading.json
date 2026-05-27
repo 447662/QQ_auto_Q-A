@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "回答应包含通用报到准备建议。", "passed": true, "evidence": "输出列出证件和录取材料、学习和电子设备、生活用品、健康和应急用品等准备方向。"},
+    {"text": "回答应明确具体清单、时间或地点需要以官方通知、辅导员或教务/教学办为准。", "passed": true, "evidence": "输出明确说明具体报到时间、地点、材料清单等资料不足以确认，并建议以官方通知或辅导员、教务/教学办为准。"},
+    {"text": "回答不应编造具体报到日期、地点或学院材料清单。", "passed": true, "evidence": "输出没有给出具体日期、地点或学院特定材料清单。"}
+  ],
+  "summary": {"passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0},
+  "execution_metrics": {"tool_calls": {}, "total_tool_calls": 0, "total_steps": 1, "errors_encountered": 0, "output_chars": 248, "transcript_chars": 0},
+  "timing": {"total_duration_seconds": 29.994}
+}

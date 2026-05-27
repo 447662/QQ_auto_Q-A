@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "skill_name": "campus-qa",
+    "skill_path": "G:/My_code/trae_solo/QQ_auto_Q&A/.claude/skills/campus-qa",
+    "executor_model": "claude-sonnet",
+    "analyzer_model": "manual",
+    "timestamp": "2026-05-28T00:00:00+08:00",
+    "evals_run": [0, 1, 2, 3],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "eval_name": "freshman-checklist",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 1.0, "passed": 3, "failed": 0, "total": 3, "time_seconds": 29.994, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应包含通用报到准备建议。", "passed": true, "evidence": "输出列出证件和录取材料、学习和电子设备、生活用品、健康和应急用品等准备方向。"},
+        {"text": "回答应明确具体清单、时间或地点需要以官方通知、辅导员或教务/教学办为准。", "passed": true, "evidence": "输出明确说明具体报到时间、地点、材料清单等资料不足以确认，并建议以官方通知或辅导员、教务/教学办为准。"},
+        {"text": "回答不应编造具体报到日期、地点或学院材料清单。", "passed": true, "evidence": "输出没有给出具体日期、地点或学院特定材料清单。"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "eval_name": "freshman-checklist",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 0.3333, "passed": 1, "failed": 2, "total": 3, "time_seconds": 30.843, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应包含通用报到准备建议。", "passed": false, "evidence": "输出只有固定兜底话术，没有报到准备建议。"},
+        {"text": "回答应明确具体清单、时间或地点需要以官方通知、辅导员或教务/教学办为准。", "passed": false, "evidence": "输出没有说明需要核实官方通知或咨询相关人员。"},
+        {"text": "回答不应编造具体报到日期、地点或学院材料清单。", "passed": true, "evidence": "输出没有编造任何具体事实。"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "course-substitution",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 1.0, "passed": 3, "failed": 0, "total": 3, "time_seconds": 37.478, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应明确表示资料不足或无法确认课程替代关系。", "passed": true, "evidence": "输出首句说明目前无法仅凭这句话确认课程替代关系。"},
+        {"text": "回答应建议查看培养方案、官方通知、教务/教学办或咨询辅导员。", "passed": true, "evidence": "输出建议查看培养方案、教务系统，并咨询辅导员或教务/教学办。"},
+        {"text": "回答不应断言《模拟电路》可以或不可以替代某门必修课。", "passed": true, "evidence": "输出没有断言可以或不可以替代，只说明无法确认。"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "course-substitution",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 0.3333, "passed": 1, "failed": 2, "total": 3, "time_seconds": 24.122, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应明确表示资料不足或无法确认课程替代关系。", "passed": false, "evidence": "输出只有固定兜底话术，没有说明资料不足或无法确认课程替代。"},
+        {"text": "回答应建议查看培养方案、官方通知、教务/教学办或咨询辅导员。", "passed": false, "evidence": "输出没有给出核实渠道。"},
+        {"text": "回答不应断言《模拟电路》可以或不可以替代某门必修课。", "passed": true, "evidence": "输出没有断言替代关系。"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "out-of-scope-pc",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 1.0, "passed": 3, "failed": 0, "total": 3, "time_seconds": 39.543, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应说明问题不属于 #集院问答 范围。", "passed": true, "evidence": "输出明确说这个问题不属于 #集院问答 范围。"},
+        {"text": "回答应提示电脑配置或购机建议应使用 #配置推荐。", "passed": true, "evidence": "输出明确提示电脑配置和购机建议请使用 #配置推荐。"},
+        {"text": "回答不应推荐具体笔记本型号、配置清单或购买渠道。", "passed": true, "evidence": "输出没有推荐任何具体型号、配置或购买渠道。"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "out-of-scope-pc",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 0.3333, "passed": 1, "failed": 2, "total": 3, "time_seconds": 22.603, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应说明问题不属于 #集院问答 范围。", "passed": false, "evidence": "输出只有固定兜底话术，没有范围说明。"},
+        {"text": "回答应提示电脑配置或购机建议应使用 #配置推荐。", "passed": false, "evidence": "输出没有提示使用 #配置推荐。"},
+        {"text": "回答不应推荐具体笔记本型号、配置清单或购买渠道。", "passed": true, "evidence": "输出没有推荐具体型号、配置或购买渠道。"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "grounded-notice",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 1.0, "passed": 3, "failed": 0, "total": 3, "time_seconds": 39.718, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应明确大一学生可以参加。", "passed": true, "evidence": "输出明确说可以参加，通知面向大一和大二学生。"},
+        {"text": "回答应包含时间本周五 19:00、地点 A101、需提前在班群表格报名。", "passed": true, "evidence": "输出包含本周五 19:00、A101、需提前在班群表格报名。"},
+        {"text": "回答不应添加通知中没有的报名截止时间、名额或额外要求。", "passed": true, "evidence": "输出没有添加报名截止时间、名额或额外要求；仅提示如需确认截止时间需查看班群补充说明。"}
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "grounded-notice",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {"pass_rate": 1.0, "passed": 3, "failed": 0, "total": 3, "time_seconds": 21.108, "tokens": 0, "tool_calls": 0, "errors": 0},
+      "expectations": [
+        {"text": "回答应明确大一学生可以参加。", "passed": true, "evidence": "输出明确说可以参加，通知面向大一和大二学生。"},
+        {"text": "回答应包含时间本周五 19:00、地点 A101、需提前在班群表格报名。", "passed": true, "evidence": "输出包含本周五 19:00、A101、提前在班群表格报名。"},
+        {"text": "回答不应添加通知中没有的报名截止时间、名额或额外要求。", "passed": true, "evidence": "输出没有添加通知外的截止时间、名额或额外要求。"}
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0},
+      "time_seconds": {"mean": 36.683, "stddev": 3.902, "min": 29.994, "max": 39.718},
+      "tokens": {"mean": 0, "stddev": 0, "min": 0, "max": 0}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 0.5, "stddev": 0.2887, "min": 0.3333, "max": 1.0},
+      "time_seconds": {"mean": 24.669, "stddev": 3.791, "min": 21.108, "max": 30.843},
+      "tokens": {"mean": 0, "stddev": 0, "min": 0, "max": 0}
+    },
+    "delta": {
+      "pass_rate": "+0.50",
+      "time_seconds": "+12.01",
+      "tokens": "+0"
+    }
+  },
+  "notes": [
+    "with_skill passed all 4 evals; without_skill only fully passed the direct pasted-notice lookup case.",
+    "The strongest differentiators are route handling for #集院问答, insufficient-materials disclaimers, and out-of-scope PC question handling.",
+    "Token counts are 0 because background subagent notifications did not include token totals in this environment. Timing was captured from notifications."
+  ]
+}

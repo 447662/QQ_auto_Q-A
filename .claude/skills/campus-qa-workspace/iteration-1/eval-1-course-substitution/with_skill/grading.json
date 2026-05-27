@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "回答应明确表示资料不足或无法确认课程替代关系。", "passed": true, "evidence": "输出首句说明目前无法仅凭这句话确认课程替代关系。"},
+    {"text": "回答应建议查看培养方案、官方通知、教务/教学办或咨询辅导员。", "passed": true, "evidence": "输出建议查看培养方案、教务系统，并咨询辅导员或教务/教学办。"},
+    {"text": "回答不应断言《模拟电路》可以或不可以替代某门必修课。", "passed": true, "evidence": "输出没有断言可以或不可以替代，只说明无法确认。"}
+  ],
+  "summary": {"passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0},
+  "execution_metrics": {"tool_calls": {}, "total_tool_calls": 0, "total_steps": 1, "errors_encountered": 0, "output_chars": 337, "transcript_chars": 0},
+  "timing": {"total_duration_seconds": 37.478}
+}

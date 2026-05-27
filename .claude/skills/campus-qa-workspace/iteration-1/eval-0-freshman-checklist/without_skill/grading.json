@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "回答应包含通用报到准备建议。", "passed": false, "evidence": "输出只有固定兜底话术，没有报到准备建议。"},
+    {"text": "回答应明确具体清单、时间或地点需要以官方通知、辅导员或教务/教学办为准。", "passed": false, "evidence": "输出没有说明需要核实官方通知或咨询相关人员。"},
+    {"text": "回答不应编造具体报到日期、地点或学院材料清单。", "passed": true, "evidence": "输出没有编造任何具体事实。"}
+  ],
+  "summary": {"passed": 1, "failed": 2, "total": 3, "pass_rate": 0.3333},
+  "execution_metrics": {"tool_calls": {}, "total_tool_calls": 0, "total_steps": 1, "errors_encountered": 0, "output_chars": 17, "transcript_chars": 0},
+  "timing": {"total_duration_seconds": 30.843}
+}

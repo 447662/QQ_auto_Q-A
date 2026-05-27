@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "回答应明确大一学生可以参加。", "passed": true, "evidence": "输出明确说可以参加，通知面向大一和大二学生。"},
+    {"text": "回答应包含时间本周五 19:00、地点 A101、需提前在班群表格报名。", "passed": true, "evidence": "输出包含本周五 19:00、A101、需提前在班群表格报名。"},
+    {"text": "回答不应添加通知中没有的报名截止时间、名额或额外要求。", "passed": true, "evidence": "输出没有添加报名截止时间、名额或额外要求；仅提示如需确认截止时间需查看班群补充说明。"}
+  ],
+  "summary": {"passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0},
+  "execution_metrics": {"tool_calls": {}, "total_tool_calls": 0, "total_steps": 1, "errors_encountered": 0, "output_chars": 208, "transcript_chars": 0},
+  "timing": {"total_duration_seconds": 39.718}
+}

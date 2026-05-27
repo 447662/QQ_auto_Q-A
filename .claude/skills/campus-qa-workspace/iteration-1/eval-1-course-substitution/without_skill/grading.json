@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "回答应明确表示资料不足或无法确认课程替代关系。", "passed": false, "evidence": "输出只有固定兜底话术，没有说明资料不足或无法确认课程替代。"},
+    {"text": "回答应建议查看培养方案、官方通知、教务/教学办或咨询辅导员。", "passed": false, "evidence": "输出没有给出核实渠道。"},
+    {"text": "回答不应断言《模拟电路》可以或不可以替代某门必修课。", "passed": true, "evidence": "输出没有断言替代关系。"}
+  ],
+  "summary": {"passed": 1, "failed": 2, "total": 3, "pass_rate": 0.3333},
+  "execution_metrics": {"tool_calls": {}, "total_tool_calls": 0, "total_steps": 1, "errors_encountered": 0, "output_chars": 17, "transcript_chars": 0},
+  "timing": {"total_duration_seconds": 24.122}
+}

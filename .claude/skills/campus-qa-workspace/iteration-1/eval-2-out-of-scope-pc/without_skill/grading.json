@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "回答应说明问题不属于 #集院问答 范围。", "passed": false, "evidence": "输出只有固定兜底话术，没有范围说明。"},
+    {"text": "回答应提示电脑配置或购机建议应使用 #配置推荐。", "passed": false, "evidence": "输出没有提示使用 #配置推荐。"},
+    {"text": "回答不应推荐具体笔记本型号、配置清单或购买渠道。", "passed": true, "evidence": "输出没有推荐具体型号、配置或购买渠道。"}
+  ],
+  "summary": {"passed": 1, "failed": 2, "total": 3, "pass_rate": 0.3333},
+  "execution_metrics": {"tool_calls": {}, "total_tool_calls": 0, "total_steps": 1, "errors_encountered": 0, "output_chars": 17, "transcript_chars": 0},
+  "timing": {"total_duration_seconds": 22.603}
+}
