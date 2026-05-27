@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
+if command -v powershell.exe >/dev/null 2>&1; then
+  winpath=$(cygpath -w "$DIR/tencent-channel-cli.exe" 2>/dev/null || printf "%s" "$DIR/tencent-channel-cli.exe")
+  TCCLI_EXE="$winpath" exec powershell.exe -NoProfile -ExecutionPolicy Bypass -Command '& "$env:TCCLI_EXE" @args' "$@"
+else
+  exec "$DIR/tencent-channel-cli.exe" "$@"
+fi

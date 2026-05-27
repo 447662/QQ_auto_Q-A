@@ -2,6 +2,10 @@
 name: lovstudio:any2pdf
 description: >
   Convert Markdown documents to professionally typeset PDF files with reportlab.
+  In this project's QQ/channel external-message auto-answering flow, this skill may
+  only be used as an auxiliary step after the message passes the “#配置推荐” gate
+  and is confirmed to be a computer-configuration question; otherwise the only
+  reply is “该功能尚未实现，请询问群主或者管理员”.
   Handles CJK/Latin mixed text, fenced code blocks, tables, blockquotes, cover pages,
   clickable TOC, PDF bookmarks, watermarks, and page numbers. Supports multiple
   color themes (Warm Academic, Nord, GitHub Light, Solarized, etc.) and is
@@ -23,6 +27,14 @@ metadata:
 ---
 
 # any2pdf — Markdown to Professional PDF
+
+## Project-wide auto-answer gate
+
+In this project's QQ/group/channel/post/comment/private-message auto-answering flow, this skill can only be used after a message contains `#配置推荐` and the remaining content is a computer-configuration question.
+
+- If the message does not contain `#配置推荐`, do not convert or generate files for the auto-answer; reply only: `该功能尚未实现，请询问群主或者管理员`.
+- If the message contains the trigger but is not about computer configuration, reply with the same fallback text.
+- Do not let PDF/report keywords bypass the project gate.
 
 This skill converts any Markdown file into a publication-quality PDF using Python's
 reportlab library. It was developed through extensive iteration on real Chinese
